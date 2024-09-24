@@ -3,9 +3,10 @@ const path = require('path');
 const { MongoClient } = require('mongodb');
 
 const app = express();
-const url = process.env.MONGODB_URL; // MongoDB URL from environment variables
-const dbName = process.env.DB_NAME; // Database Name from environment variables
-const collectionName = process.env.COLLECTION_NAME; // Collection Name from environment variables
+
+const url = 'mongodb://localhost:27017'; // MongoDB URL
+const dbName = 'Logindata'; // Database Name
+const collectionName = 'collection'; // Collection Name from environment variables
 
 // Middleware
 app.use(express.json());
